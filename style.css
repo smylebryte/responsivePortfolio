@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* Color variables */
+:root {
+    --blue: #6BB7BF
+}
+
+/* Header section */
+header {
+    background-color: var(--blue);
+    height: 100px;
+    width: 100%;
+    ;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+h1{
+    float: left;
+    padding: 25px 15px;
+    color: white;
+}
+
+nav ul li {
+    float: right;
+    display: inline-block;
+    padding-top: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 7px;
+}
+/* Hero section */
+.hero {
+    position: relative;
+    height: 400px;
+    width: 100%;
+    background-image: url("./Images/Mosaic.jfif");
+}
+
+.hero h2 {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+}
+
+.hero img {
+    position: absolute;
+    height: 300px;
+    top: 50px;
+    left: 30px;
+}
+
+/* Main section */
+.floatLeft {
+    float: left;
+}
+
+.floatRight {
+    float: right;
+}
