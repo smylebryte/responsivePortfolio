@@ -2,71 +2,142 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Color variables */
 :root {
-    --blue: #6BB7BF
+    --gray: #5c6f73;
+    --dkblue: #6bb7bf;
+    --blue: #c4f2f2;
 }
 
-/* Header section */
-header {
+body {
     background-color: var(--blue);
-    height: 100px;
-    width: 100%;
-    ;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: block;
+/* Header Section */
+#container-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dkblue);
+    height: 75px;
+    padding: 20px 10px;
 }
 
-h1{
-    float: left;
-    padding: 25px 15px;
+h1 {
     color: white;
 }
 
-nav ul li {
-    float: right;
+ul {
+    list-style-type: none;
+}
+
+li {
     display: inline-block;
-    padding-top: 25px;
+    margin: 10px;
+    color: white;
 }
 
-nav a {
-    color: white;
+li a {
     text-decoration: none;
-    margin: 7px;
+    color: white;
 }
-/* Hero section */
-.hero {
+
+a:hover {
+    text-decoration: 5px underline;
+}
+
+/* Hero Section */
+#hero {
     position: relative;
     height: 400px;
-    width: 100%;
-    background-image: url("./Images/Mosaic.jfif");
+    background-image: url(Images/Blue\ Background.jpg);
 }
 
-.hero h2 {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    color: white;
-}
-
-.hero img {
+#hero img {
     position: absolute;
     height: 300px;
+    left: 20px;
     top: 50px;
-    left: 30px;
 }
 
-/* Main section */
-.floatLeft {
-    float: left;
+#hero h2 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    font-size: 300%;
 }
 
-.floatRight {
-    float: right;
+/* Main Section */
+.row-type-1  {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.row-type-2 {
+    display: flex;
+    justify-content: center;
+}
+
+#about-me {
+    flex:1;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 200%;
+}
+
+div p {
+    flex: 3;
+    font-size: 120%;
+    border: 2px var(--gray) solid;
+    padding: 5px;
+    height: 100px;
+}
+
+.empty {
+    flex:0.75;
+}
+
+#my-work {
+    flex:1;
+    padding: 5px;
+    text-align: right;
+    padding-right: 20px;
+    font-size: 200%;
+}
+
+#project-1 {
+    flex:3;
+    border: 5px var(--gray) solid;
+    margin: 10px;
+    padding: 20px;
+    height: 400px;
+    background-image: url("./Images/Project 2.jfif");
+    object-fit: cover;
+    color: white;
+    font-size: 150%;
+}
+
+.projects {
+    flex:1;
+    border: 5px var(--gray) solid;
+    margin: 10px;
+    padding: 20px;
+    height: 200px;
+    background-image: url("Images/Project.jfif");
+    color: white;
+    font-size: 150%;
+}
+
+#contact-me {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    flex-wrap: wrap;
 }

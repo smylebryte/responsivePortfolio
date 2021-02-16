@@ -5,71 +5,65 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <title>Alicia Hughes Portfolio</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href="./style.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 </head>
 <body>
-<header class="clearfix">
-    <h1>
-        Alicia Hughes
-    </h1>
-    <nav>
-        <ul>
-            <li>
-                <a href="#aboutMe">About Me</a>
-            </li>
-            <li>
-                <a href="#myWork">Work</a>
-            </li>
-            <li>
-                <a href="#contactMe">Contact Me</a>
-            </li>
-            <li>
-                <a href="#Resume">Resume</a>
-            </li>
+    <header id="container-header">
+        <h1>Alicia Hughes</h1>
+        <nav>        
+            <ul>
+                <li>
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li>
+                    <a href="#my-work">My Work</a>
+                </li>
+                <li>
+                    <a href="#contact-me">Contact Me</a>
+                </li>
         </ul>
     </nav>
-</header>
 
-<div class="hero">
-    <h2>My Portfolio</h2>
-    <img src="Images/Alicia pic Cropped.jpg" alt="Alicia Hughes"/>
-</div>
+    </header>
 
-<main>
-    <div class="about clearfix">
-        <h3 id="aboutMe" class="floatLeft clearfix">About Me</h3>
-        <p class="floatRight">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eligendi laudantium odit sapiente at culpa mollitia quaerat nulla, perferendis saepe ducimus vel magni animi id. Velit nisi quaerat voluptas suscipit.
+    <div id="hero">
+        <img src="./Images/Alicia pic Cropped.jpg" alt="Alicia Hughes"/>
+        <h2>My Portfolio</h2>
+    </div>
+
+
+    <div class="row-type-1">
+        <h3 id="about-me">About Me</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aliquid ratione quia maiores magnam vel similique, error nihil asperiores rem reprehenderit, tenetur laborum aperiam dignissimos. Corporis sequi praesentium perspiciatis dolorum!
         </p>
     </div>
-    <div class="work clearfix">
-        <h3 id="myWork" class="floatLeft">My Work</h3>
-        <div class="projects floatRight">
-            <div>
-                <h4>Project 1</h4>
-            </div>
-            <div>
-                <h4>Project 2</h4>
-            </div>
-            <div>
-                <h4>Project 3</h4>
-            </div>
-            <div>
-                <h4>Project 4</h4>
-            </div>
-            <div>
-                <h4>Project 5</h4>
-            </div>
-        </div>
-    </div>
-    <div class="contact">
-        <h3 id="contactMe" class="floatLeft">Contact Me</h3>
-        <p class="floatRight">708.543.8219</p>
-        <a href="mailto:aliciahughes1446@gmail.com" class="floatRight">aliciahughes1446@gmail.com</a>
-        <a herf="https://github.com/smylebryte/responsivePortfolio" class="floatRight">Github</a>
-    </div>
-</main>
 
+    <div class="row-type-1">
+        <h3 id="my-work">My Work</h3>
+        <h3 id="project-1">Project 1</h3>
+    </div>
+
+    <div class="row-type-2">
+        <h3 class="empty"></h3>
+        <h3 class="projects">Project 2</h3>
+        <h3 class="projects">Project 3</h3>
+    </div>
+
+    <div class="row-type-2"> 
+        <h3 class="empty"></h3>
+        <h3 class="projects">Project 4</h3>
+        <h3 class="projects">Project 5</h3>
+    </div>
+
+    <div id="contact-me">
+        <h3>Contact Me</h3>
+        <h3>708.543.8219</h3>
+        <a href="mailto:aliciahughes1446@gmail.com">aliciahughes1446@gmail.com
+        </a>
+        <a href="https://github.com/smylebryte/responsivePortfolio">Github
+        </a>
+    </div>
 
 </body>
 </html>
